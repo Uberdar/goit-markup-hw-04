@@ -136,6 +136,9 @@ header .contact {
   display: flex;
   margin-left: auto;
 }
+.header-contacts .contact-unit:not(:last-child) {
+  margin-right: 30px; 
+}
 .header-contacts .contact-unit + .contact-unit {
   margin-left: 15px;
 }
@@ -317,7 +320,8 @@ header .contact {
   justify-content: center;
   align-items: center;
 }
-.hot-links-unit a:hover {
+.hot-links-unit a:hover,
+.hot-links-unit a:focus {
   background-color: var(--accent-txt-color);
   fill: var(--primary-white-color);
 }
@@ -348,7 +352,8 @@ header .contact {
   border-radius: 4px;
   fill: var(--icon-main-color);
 }
-.constant-clients-companies:hover {
+.constant-clients-companies:hover,
+.constant-clients-companies:focus {
   border: 1px solid var(--accent-txt-color);
   fill: var(--accent-txt-color);
 }
